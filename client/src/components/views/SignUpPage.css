@@ -1,0 +1,89 @@
+.signup-component {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.signup-component--left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.signup-component--left img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.signup-component--right {
+  width: 60%;
+  height: 100%;
+}
+
+.signup-image-source {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  bottom: 2rem;
+}
+
+.signup-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.github-login-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.github-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.signup-form__label {
+  margin: 1rem;
+}
+
+.signup-form__label input {
+  margin-left: 1rem;
+}
+
+.button-container {
+  position: relative;
+}
+
+.button-container button {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .signup-component {
+    display: block;
+  }
+
+  .signup-component--left {
+    width: 100%;
+    height: 40%;
+  }
+  .signup-component--right {
+    width: 100%;
+    height: 60%;
+  }
+}

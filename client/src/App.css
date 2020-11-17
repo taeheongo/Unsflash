@@ -1,0 +1,38 @@
+:root {
+  --RobotoMono: "Roboto Mono", monospace;
+  --SourceCodePro: "Source Code Pro", monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--SourceCodePro);
+}
+
+.button--submit {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #fff;
+  border: transparent;
+  transition: background-color 0.2s linear;
+}
+
+.button--submit:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.button--submit:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
