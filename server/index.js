@@ -11,7 +11,6 @@ app.use(express.static(path.join(__dirname, "public/build")));
 app.get("/auth/oauth", (req, res, next) => {
   // This route is callback for making app test
   const { code } = req.query;
-
   console.log("code:", code);
 
   res.end();
